@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
@@ -16,11 +17,6 @@ header {
     padding: 20px;
 }
 
-h1 {
-    color: white;
-    font-family: sans-serif;
-    margin-bottom: 10px;
-}
 
 .container {
     width: 80%;
@@ -68,6 +64,10 @@ h1 {
     cursor: pointer;
 }
 
+#color-font {
+    margin-left: 15px;
+}
+
 .fontsize {
     margin-left: 15px;
 }
@@ -83,3 +83,39 @@ h1 {
 .fontsize span {
     color: white;
 }
+
+
+.header {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h1 {
+    color: white;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+

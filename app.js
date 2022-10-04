@@ -33,6 +33,15 @@ function updateFont() {
 
 updateFont();
 
+function updateColorFont() {
+    let selectColorFont = document.querySelector('#color-font');
+    color = selectColorFont.options[selectColorFont.selectedIndex].value;
+
+    content.style = 'color:' + color + ";";
+}
+
+updateColorFont();
+
 function updateFontsSizeSpan() {
     fontsizespan.innerHTML = "";
     fontsizespan.innerHTML = fontsize + "px";

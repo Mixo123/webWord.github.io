@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebWordr</title>
+    <title>WebWord</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
+    <div class="header">
         <h1>Web Word</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Save</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
         <header>
             <div class="buttons">
                 <button class="btn" data="bold">
@@ -64,16 +75,6 @@
                     <i class="fa fa-image"></i>
                 </button>
             </div>
-
-            <div class="buttons">
-                <button class="btn downloadbtn" data="download">
-                    <i class="fa fa-download"></i>
-                </button>
-
-                <button class="btn savebtn" data="save">
-                    <i class="fa fa-save"></i>
-                </button>
-            </div>
         </header>
 
         <div class="fonts">
@@ -93,11 +94,23 @@
                 <span class="fontsizespan">Font Size</span>
                 <button class="fontsizedown">Down</button>
             </div>
+
+            <select id="color-font" onchange="updateColorFont()">
+                <option>Color</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="pink">Pink</option>
+                <option value="gray">Gray</option>
+            </select>
         </div>
 
         <div class="content" contenteditable="true"></div>
     </div>
 
+    <footer></footer>
+    
     <script src="app.js"></script>
     <script src="https://use.fontawesome.com/a31a3f8384.js"></script>
 </body>

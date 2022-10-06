@@ -123,4 +123,11 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    cursor: pointer;
+}
+
+#textarea {
+    height: 100vh;
+    border: none;
+    outline: none;
 }

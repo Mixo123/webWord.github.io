@@ -13,8 +13,9 @@
         <nav>
             <ul>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="#">Save</a></li>
-                <li><a href="#">Download</a></li>
+                <li><a id="loadbtn">Load</a></li>
+                <li><a id="Savebtn">Save</a></li>
+                <li><a id="SaveAsbtn">Save As</a></li>
                 <li><a href="#">About</a></li>
             </ul>
         </nav>
@@ -106,7 +107,9 @@
             </select>
         </div>
 
-        <div class="content" contenteditable="true"></div>
+        <div class="content">
+            <pre id="textarea" contenteditable></pre>
+        </div>
     </div>
 
     <footer></footer>

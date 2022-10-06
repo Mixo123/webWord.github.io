@@ -6,15 +6,17 @@
 }
 
 body {
-    background-color: #028fd0;
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
 }
 
 header {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    background-color: #007dd7;
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
     padding: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 .container {
@@ -34,6 +36,7 @@ header {
     background-color: white;
     outline: none;
     margin-bottom: 20px;
+
 }
 
 .content img {
@@ -45,7 +48,7 @@ header {
     align-items: center;
     width: 100%;
     padding: 20px;
-    background-color: #007dd7;
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
 }
 
 .btn {
@@ -92,10 +95,15 @@ header {
     align-items: center;
 }
 
-.header h1 {
+.header a {
     color: white;
     font-family: sans-serif;
     margin-bottom: 10px;
+    text-decoration: none;
+}
+
+#logo {
+    font-size: 40px;
 }
 
 ul {
@@ -116,4 +124,3 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
